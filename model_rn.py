@@ -83,9 +83,6 @@ class ResNet9(ImageClassificationBase):
         self.conv4 = conv_block(256, 256, pool=True, pool_no=2)
         self.res2 = nn.Sequential(conv_block(256, 256), conv_block(256, 256))
         
-        # self.classifier = nn.Sequential(nn.MaxPool2d(2), 
-        #                                 nn.Flatten(), 
-        #                                 nn.Linear(1024, num_classes))
         self.MP = nn.MaxPool2d(2)
         self.FlatFeats = nn.Flatten()
         self.classifier = nn.Linear(1024,num_classes)
