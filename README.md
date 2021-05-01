@@ -23,3 +23,11 @@ For testing you can run the following command
 where k is the number of top k images similar to the testing one
 
 
+
+### References
+
+https://github.com/matthias-wright/cifar10-resnet
+https://github.com/lambdal/cifar10-fast
+https://medium.com/swlh/natural-image-classification-using-resnet9-model-6f9dc924cd6d
+https://github.com/digantamisra98/Mish
+
